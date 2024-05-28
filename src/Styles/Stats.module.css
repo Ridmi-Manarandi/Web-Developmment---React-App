@@ -1,0 +1,55 @@
+.main{
+    margin-top: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 140px;    
+}
+
+.cardItems {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hiddenNumber {
+    position: relative;
+    z-index: 1;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+.number {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 2;
+    font-size: 40px;
+    color: rgb(8, 8, 83);
+    font-weight: bold;
+   
+}
+.para {
+    top: 40px;
+    left: 100px;
+    z-index: 2;
+    position: absolute;
+    font-size: 20px;
+    color: rgb(8, 8, 83);
+    font-weight: bold;
+   
+}
+@media screen and (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 140px;    
+    }
+ }

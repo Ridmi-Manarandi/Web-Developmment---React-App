@@ -1,0 +1,43 @@
+.main{
+    margin-top: 0px;
+}
+
+.logoCard{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.logos img{
+    width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    opacity: 0.4;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .active {
+    animation: slide 12s infinite;
+  }
+  @media screen and (max-width: 768px) {
+    .logoCard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 100px;
+  }
+ }

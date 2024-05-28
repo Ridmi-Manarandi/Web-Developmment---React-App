@@ -1,0 +1,110 @@
+.main{
+    margin-top: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  0px 40px;    
+}
+
+.cardItems {
+    margin-left: 30px;
+    padding: 30px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 4px;
+}
+
+
+.cardItems h3{
+   color: gray;
+   margin-top: 0;
+
+}
+
+.cardItem{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    align-items: left;
+    gap: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(123, 122, 122, 0.5);
+}
+
+.cardItem p{
+    margin: 0;
+    width: 80%;
+    color: rgb(79, 78, 78);
+   
+}
+
+.cardItems p{
+    text-align: justify;
+}
+
+.para{
+    background-color: #cac7c7;
+    padding: 10px;
+}
+.cardItems h2{
+    margin-top: 0px;
+}
+.cardItem i{
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.showIcons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+ }
+
+.showIcons i{
+   
+    padding: 6px 16px 0px 16px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(111, 110, 110, 0.5);
+    border: 1px solid rgb(183, 180, 180);
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+}
+.author h2{
+    margin-bottom: 0px;
+}
+.author p{
+    margin: 0;
+}
+.showIcons:hover i{
+    background-color:  #247035;
+}
+.cardItem:hover{
+    background-color:  #8ba591;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;  
+        width: 100%; 
+    }
+    .author p{
+        margin-left: 55px;
+    }
+ }
+
+

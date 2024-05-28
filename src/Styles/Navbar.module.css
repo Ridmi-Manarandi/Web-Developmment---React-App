@@ -1,0 +1,179 @@
+.mainDiv {
+    padding: 20px 60px 100px 60px;
+  }
+  
+  .logo {
+    display: flex;
+    float: left;
+    margin: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    float: right;
+  }
+  
+  .navItem {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .navItem i {
+    padding-top: 4px;
+    margin-left: 10px;
+  }
+  
+  .navBtn {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+  }
+  
+  .navBtn1 {
+    margin-top: 16px;
+    padding: 5px;
+  }
+  
+  .navBtn1 button {
+    padding: 12px;
+    color: white;
+    background-color: #F7C000;
+    border: none;
+  }
+  
+  .navBtn2 {
+    margin-top: 16px;
+    padding: 5px;
+  }
+  
+  .navBtn2 button {
+    padding: 12px;
+    color: white;
+    background-color: #171717;
+    border: none;
+  }
+  
+  .divider {
+    margin-top: 30px;
+    width: 5px;
+    height: 25px;
+    background-color: #F7C000;
+    padding-left: 0px;
+  }
+  
+  .navItem:hover {
+    background-color: #868788;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .navItem i {
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover i {
+    color: #626364;
+  }
+  
+  .navBtn1:hover button {
+    background-color: #247035;
+    transform: scale(1.05);
+  }
+  
+  .navBtn2:hover button {
+    background-color: #247035;
+    transform: scale(1.05);
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(112, 109, 109);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+  }
+  
+  .dropdownItem {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #3c3b3b;
+  }
+  
+  .dropdownItem a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .navBtn1 button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .navBtn2 button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .navHeader a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mainDiv {
+      padding: 20px 10px 100px 10px;
+    }
+  
+    .logo {
+      margin: 20px auto;
+    }
+  
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .navItem {
+      margin: 10px;
+      padding: 5px;
+    }
+  
+    .divider {
+      display: none;
+    }
+  
+    .navBtn {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .navBtn1,
+    .navBtn2 {
+      margin-top: 10px;
+    }
+  
+    .navBtn1 button,
+    .navBtn2 button {
+      padding: 8px 16px;
+    }
+  }
+  
